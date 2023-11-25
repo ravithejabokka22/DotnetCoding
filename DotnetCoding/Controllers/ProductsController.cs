@@ -27,6 +27,7 @@ namespace DotnetCoding.Controllers
         public async Task<IActionResult> GetProductList()
         {
             var productDetailsList = await _productService.GetAllProducts();
+            //
             if(productDetailsList == null)
             {
                 return NotFound();
